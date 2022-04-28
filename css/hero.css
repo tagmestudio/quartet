@@ -1,0 +1,115 @@
+/*
+-------------------------------
+Hero
+-------------------------------
+*/
+.hero {
+  height: calc(95vh - var(--header-height));
+  margin-top: var(--header-height);
+  background: url('../img/hero/mobile-bg.jpg') no-repeat top right / auto 100%;
+}
+
+.hero .container {
+  align-items: center;
+  background: linear-gradient(to right, var(--white) 0, rgba(255, 255, 255, 0.5) 60vw, rgba(255, 255, 255, 0) 95vw);
+}
+
+.hero h1 {
+  padding-bottom: 1.25rem;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.hero h1 strong {
+  display: block;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.hero .text-block {
+  position: absolute;
+  width: 75%;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+}
+
+.hero .text-block:after {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 110%;
+
+  z-index: -1;
+}
+
+.hero .text-block p {
+  margin: 10px 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1360px) {
+  .hero {
+    max-height: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero .text-block {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .hero h1 {
+    font-size: 49px;
+    line-height: 63px;
+  }
+
+  .hero .text-block p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    height: calc(100vh - var(--header-height));
+    background: url('../img/hero/desktop-bg.jpg') no-repeat right top / auto 100%;
+  }
+
+  .hero .container {
+    background: linear-gradient(to right, var(--white) 0, rgba(255, 255, 255, 0.8) 500px, rgba(255, 255, 255, 0) 700px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero h1 {
+    padding-bottom: 2.5rem;
+    font-size: 70px;
+    line-height: 82px;
+  }
+
+  .hero .text-block {
+    max-width: 35%;
+    width: 100%;
+  }
+
+  .hero .text-block p {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .hero .btn {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .hero {
+    height: 480px;
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fa8c6f4a-7f55-4d88-869d-1daeca106da8" name="stage" url="http://hostde20.fornex.host">
+        <fileTransfer rootFolder="/public_html/qrt.brynzovskii.com" host="hostde20.fornex.host" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

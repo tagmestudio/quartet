@@ -1,0 +1,154 @@
+/*
+-------------------------------
+Contact form
+-------------------------------
+*/
+.contact-form {
+  background: url('../img/contact-form-image.png') no-repeat left -200px bottom 30px;
+}
+
+.contact-form .inner {
+  display: flex;
+}
+
+.contact-form .inner-row {
+  flex-basis: 50%;
+}
+
+.contact-form .section-label {
+  background: linear-gradient(to top, #ffffff, var(--light-gray));
+}
+
+.form-inner {
+  margin-top: 40px;
+  width: 760px;
+  padding: 0 15px;
+}
+
+.form-description {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Point Extra', sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  letter-spacing: 0.05em;
+  line-height: 31px;
+  color: #000;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  flex-basis: 49%;
+}
+
+.form-row.is-full .form-input {
+  flex-basis: 100%;
+}
+
+.form-row.is-centered .form-input {
+  text-align: center;
+}
+
+.form-row.is-centered .form-input .btn {
+  margin-top: 20px;
+}
+
+.form-input label {
+  display: block;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  color: #969696;
+}
+
+.form-input input {
+  background: #fff;
+  border: 1px solid #9e9e9e;
+  width: 100%;
+  height: 68px;
+  padding: 0 20px;
+  font-size: 19px;
+}
+
+@media (max-width: 1600px) {
+  .contact-form {
+    background-size: 70%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contact-form {
+    background-size: 60%;
+  }
+
+  .form-input input {
+    height: 55px;
+  }
+
+  .form-row.is-centered .form-input .btn {
+    font-size: 16px;
+  }
+
+  .form-row.is-centered .form-input .btn br {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .form-input label {
+    font-size: 15px;
+  }
+
+  .form-input input {
+    height: 42px;
+  }
+
+  .form-row {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .form-input {
+    flex-basis: 100%;
+  }
+
+  .form-row.is-centered .form-input .btn {
+    padding: 9px 12px 6px;
+  }
+
+  .contact-form {
+    background: url('../img/contact-city.jpg') no-repeat center bottom / contain;
+  }
+
+  .contact-form .inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .contact-form .inner-row {
+    flex-basis: 100%;
+    max-width: 460px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-description {
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 22px;
+  }
+
+  .form-description br {
+    display: none;
+  }
+}
